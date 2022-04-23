@@ -13,12 +13,12 @@ h2 {
         text-align: center;
         font-size: 2.5rem;
     }
-    margin-bottom: 7rem;
+    margin-bottom: 2rem;
 }
 
 .galeria-imagenes {
+    display: block;
     @include m.resetear-lista;
-    margin-bottom: 8rem;
     @include m.grid(2, 2rem);
     @include m.telefono {
         @include m.grid(3, 2rem)

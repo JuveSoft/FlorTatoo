@@ -45,7 +45,6 @@ function versionWebp(done) {
     done();
 }
 
-
 function versionAvif(done) {
     const opciones = {
         quality: 50
@@ -55,12 +54,6 @@ function versionAvif(done) {
         .pipe(dest('build/img'))
     done();
 }
-
-// function javascript(done) {
-//     src('src/js/**/*.js')
-//         .pipe(dest('build/js'))
-//     done();
-//}
 
 function javascript(done) {
     src('src/js/**/*.js')
@@ -73,7 +66,6 @@ function dev(done) {
 
     watch('src/scss/**/*.scss', css);
     watch('src/js/**/*.js', javascript);
-
     done();
 }
 

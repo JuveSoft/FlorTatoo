@@ -1,21 +1,20 @@
-// alert("Hola Juve");
 document.addEventListener('DOMContentLoaded', function() {
-    iniciarApp();
+    iniciarProyecto();
 });
 
-function iniciarApp() {
-    crearGaleria();
+function iniciarProyecto() {
+    crearProyecto();
 }
 
-function crearGaleria() {
-    const galeria = document.querySelector('.galeria-imagenes');
-    for (let i = 9; i <= 33; i++) {
+function crearProyecto() {
+    const galeria = document.querySelector('.galeria-proyectos');
+    for (let i = 1; i <= 7; i++) {
         const imagen = document.createElement('picture');
         imagen.innerHTML = `
-            <source srcset="build/img/${i}.avif" type="image/avif">
-            <source srcset="build/img/${i}.webp" type="image/webp">
-            <img loading="lazy" width="200" height="300" src="build/img/${i}.jpg" alt="imagen galeria">
-        `;
+             <source srcset="build/img/${i}.avif" type="image/avif">
+             <source srcset="build/img/${i}.webp" type="image/webp">
+             <img loading="lazy" width="200" height="300" src="build/img/${i}.jpg" alt="imagen galeria">
+         `;
         imagen.onclick = function() {
             mostrarImagen(i);
         }
@@ -28,10 +27,10 @@ function mostrarImagen(id) {
     // console.log('mostrando...', id);
     const imagen = document.createElement('picture');
     imagen.innerHTML = `
-                <source srcset="build/img/${id}.avif" type="image/avif">
-                <source srcset="build/img/${id}.webp" type="image/webp">
-                <img loading="lazy" width="200" height="300" src="build/img/${id}.jpg" alt="imagen galeria">
-            `;
+             <source srcset="build/img/${id}.avif" type="image/avif">
+             <source srcset="build/img/${id}.webp" type="image/webp">
+             <img loading="lazy" width="200" height="300" src="build/img/${id}.jpg" alt="imagen galeria">
+         `;
     // Crea el Overlay con la imagen
     const overlay = document.createElement('DIV');
     overlay.appendChild(imagen);

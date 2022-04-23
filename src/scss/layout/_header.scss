@@ -1,6 +1,9 @@
     @use 'base/variables' as v;
     @use 'base/mixins' as m;
     .header {
+        overflow: hidden;
+        float: none;
+        display: block;
         background-color: v.$celeste;
         max-width: 100%;
         color: #ac67ff;
@@ -14,7 +17,7 @@
         h1 {
             @include m.telefono {
                 margin: auto;
-                font-size: 1.5rem;
+                font-size: 3.5rem;
             }
         }
         @include m.tablet {
