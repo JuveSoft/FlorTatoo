@@ -896,6 +896,7 @@ h2 {
 
 .formulario {
   position: relative;
+  display: flex;
   width: 35rem;
   padding: 0;
   height: 100%;
@@ -926,6 +927,30 @@ td {
 label {
   display: flex;
   justify-content: right;
+  align-items: center;
+}
+
+input {
+  padding: 1rem;
+  font-size: larger;
+}
+
+input[type=text] {
+  font-size: 1.8rem;
+}
+
+input[type=password] {
+  font-size: 1.8rem;
+}
+
+.enviar {
+  padding: 1rem;
+  font-size: 3rem;
+}
+.enviar input {
+  background-color: #64c1ff;
+  border-color: blueviolet;
+  cursor: pointer;
 }
 
 .centro {
@@ -940,6 +965,12 @@ label {
 .centro-encabezado label {
   font-size: 4rem;
   padding: 0;
+}
+
+a:hover {
+  color: #0d1ad4;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .formulario {
