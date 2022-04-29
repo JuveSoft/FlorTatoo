@@ -896,8 +896,8 @@ h2 {
 
 .formulario {
   position: relative;
-  display: flex;
-  width: 35rem;
+  display: block;
+  text-align: center;
   padding: 0;
   height: 100%;
   background-color: #0ceca2;
@@ -905,20 +905,27 @@ h2 {
 }
 
 table {
-  display: flex;
   width: 35rem;
   margin: auto;
   z-index: 9;
 }
+table a:hover {
+  color: #0d1ad4;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.ingresoDatos {
+  display: block;
+}
 
 tr {
   margin: 2rem auto;
-  width: 100%;
+  width: 8rem;
+  max-width: 100%;
 }
 
 td {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   justify-content: center;
   padding: 1rem;
@@ -926,35 +933,37 @@ td {
 
 label {
   display: flex;
-  justify-content: right;
   align-items: center;
 }
 
-input {
-  padding: 1rem;
-  font-size: larger;
+input[type=text] {
+  font-size: 1.3rem;
 }
 
-input[type=text] {
-  font-size: 1.8rem;
+input[type=number] {
+  font-size: 1.3rem;
 }
 
 input[type=password] {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
+}
+
+input[type=email] {
+  font-size: 1.3rem;
 }
 
 .enviar {
-  padding: 1rem;
-  font-size: 3rem;
+  padding: 0.5rem;
+  font-size: 2rem;
 }
 .enviar input {
-  background-color: #64c1ff;
-  border-color: blueviolet;
+  background-color: #fcf04a;
+  border-color: #cba6ee;
   cursor: pointer;
 }
 
 .centro {
-  color: #0d27bb;
+  color: #362d02;
   display: flex;
   margin: 1rem auto;
 }
@@ -963,20 +972,14 @@ input[type=password] {
 }
 
 .centro-encabezado label {
-  font-size: 4rem;
+  font-size: 2rem;
   padding: 0;
 }
 
-a:hover {
-  color: #0d1ad4;
-  font-size: 2rem;
-  font-weight: 500;
-}
-
 .formulario {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3;
+  display: flex;
+  width: 60%;
+  max-width: 50rem;
 }
 
 table {
@@ -993,7 +996,7 @@ td {
 
 input {
   width: 22rem;
-  font-size: 1rem;
+  min-width: 15rem;
 }
 
 .mensOculto {

@@ -53,10 +53,10 @@ textarea{
 </style>
 </head>
 <body>
- <form action="method="post">
-<input type="text" placeholder="Nombre" name="nombre" required="">
-<input type="email" placeholder="E-mail" name="email" required="">
-<input type="text" placeholder="Asunto" name="asunto" required="">
+ <form action="" method="post">
+<input type="text" placeholder="Nombre" name="nombre" required>
+<input type="email" placeholder="E-mail" name="email" required>
+<input type="text" placeholder="Asunto" name="asunto" required>
 <textarea placeholder="Mensaje" name="msg" id="" cols="30" rows="10"></textarea>
 <input type="submit" name="enviar">
  </form>
