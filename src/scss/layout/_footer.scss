@@ -11,29 +11,31 @@
     border-radius: 5px;
     p {
         color: rgb(8, 247, 8);
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-family: 'Courier New', Courier, monospace;
     }
     span {
         color: white;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     .redes {
         display: flex;
-        position: relative;
+        justify-content: space-between;
+        padding: 0.2rem;
         margin: auto;
-        width: 80%;
-        height: 4rem;
-        background-color: rgb(84, 196, 240);
+        width: 90%;
+        //min-height: 6rem;
+        background-color: rgb(150, 197, 20);
         @include m.tablet {
             margin: auto;
-            width: 40rem;
+            width: 60rem;
             height: 6rem;
-            //background-color: rgb(10, 248, 10);
         }
     }
     a {
-        display: flex;
-        width: 80%;
+        width: 6rem;
+        height: 6rem;
+        padding: 0;
+        margin: auto;
     }
 }

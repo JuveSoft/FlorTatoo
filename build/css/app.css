@@ -402,12 +402,14 @@ img {
 
 .header {
   overflow: hidden;
-  float: none;
   display: block;
   background-color: #64c1ff;
   max-width: 100%;
   color: #ac67ff;
   text-align: center;
+}
+.header h1 {
+  font-size: 2.5rem;
 }
 @media (min-width: 768px) {
   .header {
@@ -418,7 +420,7 @@ img {
 @media (min-width: 480px) {
   .contenido-header h1 {
     margin: auto;
-    font-size: 3.5rem;
+    font-size: 3.8rem;
   }
 }
 @media (min-width: 768px) {
@@ -1016,29 +1018,31 @@ input {
 }
 .fin-hoja p {
   color: #08f708;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: "Courier New", Courier, monospace;
 }
 .fin-hoja span {
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .fin-hoja .redes {
   display: flex;
-  position: relative;
+  justify-content: space-between;
+  padding: 0.2rem;
   margin: auto;
-  width: 80%;
-  height: 4rem;
-  background-color: #54c4f0;
+  width: 90%;
+  background-color: #96c514;
 }
 @media (min-width: 768px) {
   .fin-hoja .redes {
     margin: auto;
-    width: 40rem;
+    width: 60rem;
     height: 6rem;
   }
 }
 .fin-hoja a {
-  display: flex;
-  width: 80%;
+  width: 6rem;
+  height: 6rem;
+  padding: 0;
+  margin: auto;
 }
